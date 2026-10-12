@@ -1,0 +1,23 @@
+# blygger-reference-client
+
+A pure-stdlib Python reference client for the [Blygger](https://blygger.org/) protocol
+(v0.3, conformance **L1 + blogroll, static**). Publisher + reader share only `blygger.core`;
+the round-trip test is the conformance oracle.
+
+## Run the tests
+
+    python -m unittest discover -s tests -v
+
+## Layout
+
+- `blygger/core` — pure protocol logic (ids, hashing, models, markdown, transclusion,
+  serialization, rollup/watermark/resolution). No I/O.
+- `blygger/publish` — private all-versions store, studio ops, static-surface emitter.
+- `blygger/read` — resolution, archive+watermark, reconciler, polling policy.
+- `blygger/transport` — Transport ABC + filesystem and HTTP backends.
+
+## Scope
+
+L1 single-origin + optional blogroll, emitted as plain static files. L2 constructs
+(cross-origin/partial transclusion, stubs, forks, generation disclosure, Webmention) and
+L0 RSS grandfathering are deferred (see `docs/superpowers/specs/`).

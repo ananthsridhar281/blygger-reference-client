@@ -137,7 +137,9 @@ def emit(store, out_dir, origin, generator, updated):
         else:
             for v in rec["versions"]:
                 note = v.get("note")
-                excerpt = latest["content_md"][:60]
+                # single-line excerpt: collapse whitespace, drop lone transclusion directives
+                words = " ".join(latest["content_md"].split())
+                excerpt = words[:60]
                 title = f"{note} — {excerpt}" if note else excerpt
                 feed_rows.append({"id": iid, "version": v["version"], "at": v["at"],
                                   "created": rec["created"], "kind": latest["kind"],

@@ -38,6 +38,12 @@ class Reconciler:
             result.discrepancies.append(Discrepancy(
                 type="stealth_edit", origin=origin, id=item.id,
                 detail=f"v{item.version} content_hash changed"))
+        # hash self-consistency check (defect report, not a reject) — spec 13.3 SHOULD
+        from ..core.hashing import content_hash
+        if item.kind != "withdrawn" and content_hash(item.content_md) != item.content_hash:
+            result.discrepancies.append(Discrepancy(
+                type="hash_mismatch", origin=origin, id=item.id,
+                detail="content_hash does not match content_md"))
         local_item = None
         if local_state:
             # reconstruct a minimal Item for rollup comparison

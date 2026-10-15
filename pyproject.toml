@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "blygger-reference-client"
+version = "0.1.0"
+description = "Pure-stdlib Python round-trip reference client for the Blygger v0.3 decentralized publishing protocol (L1 + blogroll)."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = []
+
+[project.scripts]
+blygger = "blygger.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["blygger*"]

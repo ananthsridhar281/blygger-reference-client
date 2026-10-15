@@ -1,0 +1,2 @@
+[console_scripts]
+blygger = blygger.cli:main

@@ -1,0 +1,17 @@
+{
+  "authored_kind": "fragment",
+  "created": "2026-10-15T15:25:20Z",
+  "versions": [
+    {
+      "at": "2026-10-15T15:25:20Z",
+      "content_hash": "sha256:9015e796fb7d56a0db7ac9ed9bc851a22afccade7374b613a3a47e979af40241",
+      "content_html": "<p>Hello world. </p>",
+      "content_md": "Hello world. ",
+      "kind": "fragment",
+      "media": [],
+      "note": null,
+      "pinned": true,
+      "version": 1
+    }
+  ]
+}

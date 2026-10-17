@@ -1,0 +1,14 @@
+{
+  "at": "2026-10-15T15:25:20Z",
+  "author": null,
+  "blyg": "0.3",
+  "content_hash": "sha256:9015e796fb7d56a0db7ac9ed9bc851a22afccade7374b613a3a47e979af40241",
+  "content_html": "<p>Hello world. </p>",
+  "content_md": "Hello world. ",
+  "id": "2ag7p4wf8s42zvwcmrkfkce34g",
+  "kind": "fragment",
+  "note": null,
+  "origin": "https://demo.example/blyg/",
+  "pinned": true,
+  "version": 1
+}

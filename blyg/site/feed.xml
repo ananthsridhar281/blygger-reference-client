@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:blyg="https://blygger.org/ns/0.1" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title></title>
+    <link>https://demo.example/blyg/</link>
+    <description></description>
+    <lastBuildDate>Thu, 15 Oct 2026 15:48:48 GMT</lastBuildDate>
+    <blyg:level>1</blyg:level>
+    <blyg:manifest>https://demo.example/blyg/blyg.json</blyg:manifest>
+    <item>
+      <guid isPermaLink="false">blyg:2ag7p4wf8s42zvwcmrkfkce34g:v1</guid>
+      <link>https://demo.example/blyg/f/2ag7p4wf8s42zvwcmrkfkce34g/</link>
+      <title>Hello world.</title>
+      <description><![CDATA[<p>Hello world. </p>]]></description>
+      <pubDate>Thu, 15 Oct 2026 15:25:20 GMT</pubDate>
+      <blyg:id>2ag7p4wf8s42zvwcmrkfkce34g</blyg:id>
+      <blyg:kind>fragment</blyg:kind>
+      <blyg:version>1</blyg:version>
+      <blyg:created>2026-10-15T15:25:20Z</blyg:created>
+      <blyg:item>https://demo.example/blyg/items/2ag7p4wf8s42zvwcmrkfkce34g.json</blyg:item>
+    </item>
+  </channel>
+</rss>

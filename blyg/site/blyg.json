@@ -1,0 +1,11 @@
+{
+  "author": null,
+  "blyg": "0.3",
+  "feed": "feed.xml",
+  "generator": "blygger-ref/0.1",
+  "items": "items/index.json",
+  "level": 1,
+  "site": "https://demo.example/blyg/",
+  "title": "",
+  "updated": "2026-10-15T15:48:48Z"
+}
